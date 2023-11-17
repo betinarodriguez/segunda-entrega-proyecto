@@ -165,8 +165,6 @@ body {
 
 .contenedorProductos{
     margin: 20px;
-    border: 2px solid teal;
-    border-radius: 10px;
     color: #007EA7;
     text-align: center;
     padding: 10px;
@@ -263,11 +261,11 @@ textarea{
 
 /* Footer */
 
-
 footer{
     color: #007EA7;
     margin: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 /*Vista tablet*/
@@ -310,14 +308,6 @@ footer{
         grid-template-columns: 1fr 1fr;
     }
 
-
-    /*Footer*/
-
-    .footerContenido {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
 
 /*0 hasta 768px*/
