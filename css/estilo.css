@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+.logo{
+    width: 170px;
+}
+
+body {
+    background-color: #CDFFFA;
+    font-family:'Handlee', cursive;
+}
+
+/* Header */
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.verde {
+    color: #7AB730;
+}
+
+.boton {
+    background-color: #7AB730;
+    color: #FAFAFA;
+    font-weight: 700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+
+.boton:hover {
+    background-color: #28a745;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.encabezado li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.encabezado li a {
+    text-decoration: none;
+    margin: 10px;
+    color: #6AADB5;
+    font-size: 1.5rem;
+}
+
+.encabezado li a:hover {
+    color: #CCDBDC;
+}
+
+/* Banner */
+
+.banner {
+    background-image: url("../imagenes/banner.jpg");
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.bannerContenido {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bannerContenido h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.bannerContenido p {
+    color: #CDFFFA;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bannerContenido .boton {
+    margin-top: 10px;
+}
+
+.productos {
+    color: #007EA7;
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.productos{
+    color: #007EA7;
+    text-align: center;
+    padding: 10 px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; 
+   
+}
+
+.tarjeta button{
+    background-color: turquoise;
+    color: darkslategrey;
+    font-weight: 550;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.tarjeta img{
+    max-width: 100%;
+    max-height: 100% ;
+}
+
+.tarjeta button:hover {
+    background-color: rgb(40, 159, 167);
+}
+
+.contenedorProductos{
+    margin: 20px;
+    border: 2px solid teal;
+    border-radius: 10px;
+    color: #007EA7;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.imagenProducto{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorDesayunos {
+    color: #007EA7;
+    text-align: center;
+    padding: 10 px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.tituloDesayunos{
+    text-align: center;
+    color: #007EA7;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.imagenDesayuno{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorCafe{
+    display: grid;
+    margin: 20px;
+    border-radius: 10px;
+    color: #007EA7;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.imagenBebidas{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorTextoMenu{
+    text-align: left;
+    color: #007EA7;
+}
+
+.menuImg{
+    display: block;
+    margin: auto;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+form{
+    margin-top: 25px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #427974;
+}
+
+input [type=text],
+textarea{
+    display: block;
+    width: 100%;
+    padding: 15 px;
+    border: 1px solid teal;
+}
+
+.botonContacto{
+    background-color: #427974;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+}
+
+/* Footer */
+
+
+footer{
+    color: #007EA7;
+    margin: 20px;
+    padding: 20px;
+}
+
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width:1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado .boton {
+        display: none;
+    }
+
+    /*Banner*/
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+
+    .productos {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .contenedorProductos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedorDesayunos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tituloDesayunos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/*0 hasta 768px*/
+
+@media (max-width:768px) {
+
+
+    .contenedorProductos {
+        grid-template-columns: 1fr;
+    }
+    
+    .contenedorDesayunos{
+        grid-template-columns: 1fr ;
+    }
+}
