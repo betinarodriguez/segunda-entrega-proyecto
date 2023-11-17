@@ -25,12 +25,8 @@ body {
 }
 
 
-.verde {
-    color: #7AB730;
-}
-
 .boton {
-    background-color: #7AB730;
+    background-color: #427974;
     color: #FAFAFA;
     font-weight: 700;
     border: none;
@@ -40,7 +36,7 @@ body {
 
 
 .boton:hover {
-    background-color: #28a745;
+    background-color: #427974;
     color: #FAFAFA;
     cursor: pointer;
 }
