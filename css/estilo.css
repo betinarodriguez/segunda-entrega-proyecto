@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #CDFFFA;
+    background: linear-gradient(to left, #8b5e8e, #CDFFFA);;
     font-family:'Handlee', cursive;
 }
 
